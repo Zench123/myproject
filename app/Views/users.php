@@ -5,7 +5,23 @@
     <a href="/customers">CUSTOMERS</a>
 <a href="/users">USERS</a> 
 </nav>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>username</th>
+<th>full_name</th>
+
+</tr>
+
+</table>
+
 <?php
+
+
+
+
 
 
 foreach($users as $user)
