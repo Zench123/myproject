@@ -19,19 +19,29 @@
 
 
 
+
+
 <?php
-
-
 foreach($customers as $customer)
 
-{
-echo $customer['full_name'];
- echo $customer['email'];
-echo$customer['phone'];
-}
+{?>
+
+<tr>
+<td><?=  $customer['full_name']; ?>   </td>
+<td><?=  $customer['email'];  ?> 
+  </td>
+<td><?=  $customer['phone']; ?>   </td>
+</tr>
 
 
-?></table>
+
+
+
+
+<?php } ?>
+
+
+</table>
 
 
 

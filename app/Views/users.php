@@ -7,33 +7,40 @@
 </nav>
 
 <table>
-
 <tr>
-<th>ID</th>
-<th>username</th>
-<th>full_name</th>
 
+<th>position</th>
+<th>FullName</th>
+<th>Created_at</th>
 </tr>
 
-</table>
+
+
+
+
+
 
 <?php
-
-
-
-
-
-
 foreach($users as $user)
 
-{
-echo $user['username'];
-echo $user['fullname'];
-echo $user['role'];
-}
+{?>
+
+<tr>
+<td><?=  $user['username']; ?>   </td>
+<td><?=  $user['full_name'];  ?> 
+  </td>
+<td><?=  $user['created_at']; ?>   </td>
+</tr>
 
 
-?>
+
+
+
+
+<?php } ?>
+
+
+</table>
 
 
 
